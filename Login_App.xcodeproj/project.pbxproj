@@ -12,6 +12,10 @@
 		ED6D77BE2292CD43000F038A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6D77BC2292CD43000F038A /* Main.storyboard */; };
 		ED6D77C02292CD45000F038A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6D77BF2292CD45000F038A /* Assets.xcassets */; };
 		ED6D77C32292CD45000F038A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6D77C12292CD45000F038A /* LaunchScreen.storyboard */; };
+		ED6D77D12292CDB5000F038A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D77D02292CDB5000F038A /* AppDelegate.swift */; };
+		ED6D77D32292CDB5000F038A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D77D22292CDB5000F038A /* ViewController.swift */; };
+		ED6D77D62292CDB5000F038A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6D77D42292CDB5000F038A /* Main.storyboard */; };
+		ED6D77DB2292CDB5000F038A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6D77D92292CDB5000F038A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +26,23 @@
 		ED6D77BF2292CD45000F038A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED6D77C22292CD45000F038A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED6D77C42292CD45000F038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6D77CE2292CDB5000F038A /* Login_Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login_Admin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6D77D02292CDB5000F038A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED6D77D22292CDB5000F038A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED6D77D52292CDB5000F038A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED6D77DA2292CDB5000F038A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED6D77DC2292CDB5000F038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ED6D77B22292CD43000F038A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6D77CB2292CDB5000F038A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +55,9 @@
 		ED6D77AC2292CD43000F038A = {
 			isa = PBXGroup;
 			children = (
+				ED6D77E02292CE02000F038A /* Shared */,
 				ED6D77B72292CD43000F038A /* Login_App */,
+				ED6D77CF2292CDB5000F038A /* Login_Admin */,
 				ED6D77B62292CD43000F038A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				ED6D77B52292CD43000F038A /* Login_App.app */,
+				ED6D77CE2292CDB5000F038A /* Login_Admin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,11 +77,30 @@
 				ED6D77B82292CD43000F038A /* AppDelegate.swift */,
 				ED6D77BA2292CD43000F038A /* ViewController.swift */,
 				ED6D77BC2292CD43000F038A /* Main.storyboard */,
-				ED6D77BF2292CD45000F038A /* Assets.xcassets */,
 				ED6D77C12292CD45000F038A /* LaunchScreen.storyboard */,
 				ED6D77C42292CD45000F038A /* Info.plist */,
 			);
 			path = Login_App;
+			sourceTree = "<group>";
+		};
+		ED6D77CF2292CDB5000F038A /* Login_Admin */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D77D02292CDB5000F038A /* AppDelegate.swift */,
+				ED6D77D22292CDB5000F038A /* ViewController.swift */,
+				ED6D77D42292CDB5000F038A /* Main.storyboard */,
+				ED6D77D92292CDB5000F038A /* LaunchScreen.storyboard */,
+				ED6D77DC2292CDB5000F038A /* Info.plist */,
+			);
+			path = Login_Admin;
+			sourceTree = "<group>";
+		};
+		ED6D77E02292CE02000F038A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D77BF2292CD45000F038A /* Assets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +123,23 @@
 			productReference = ED6D77B52292CD43000F038A /* Login_App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ED6D77CD2292CDB5000F038A /* Login_Admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6D77DD2292CDB5000F038A /* Build configuration list for PBXNativeTarget "Login_Admin" */;
+			buildPhases = (
+				ED6D77CA2292CDB5000F038A /* Sources */,
+				ED6D77CB2292CDB5000F038A /* Frameworks */,
+				ED6D77CC2292CDB5000F038A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Login_Admin;
+			productName = Login_Admin;
+			productReference = ED6D77CE2292CDB5000F038A /* Login_Admin.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +151,9 @@
 				ORGANIZATIONNAME = "Mohsen Abdl";
 				TargetAttributes = {
 					ED6D77B42292CD43000F038A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					ED6D77CD2292CDB5000F038A = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -113,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				ED6D77B42292CD43000F038A /* Login_App */,
+				ED6D77CD2292CDB5000F038A /* Login_Admin */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +188,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED6D77CC2292CDB5000F038A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6D77DB2292CDB5000F038A /* LaunchScreen.storyboard in Resources */,
+				ED6D77D62292CDB5000F038A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +206,15 @@
 			files = (
 				ED6D77BB2292CD43000F038A /* ViewController.swift in Sources */,
 				ED6D77B92292CD43000F038A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6D77CA2292CDB5000F038A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6D77D32292CDB5000F038A /* ViewController.swift in Sources */,
+				ED6D77D12292CDB5000F038A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +233,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				ED6D77C22292CD45000F038A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ED6D77D42292CDB5000F038A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6D77D52292CDB5000F038A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED6D77D92292CDB5000F038A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6D77DA2292CDB5000F038A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -310,6 +404,40 @@
 			};
 			name = Release;
 		};
+		ED6D77DE2292CDB5000F038A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Login_Admin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mohsen-Abdl.Login-Admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED6D77DF2292CDB5000F038A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Login_Admin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mohsen-Abdl.Login-Admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +455,15 @@
 			buildConfigurations = (
 				ED6D77C82292CD45000F038A /* Debug */,
 				ED6D77C92292CD45000F038A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6D77DD2292CDB5000F038A /* Build configuration list for PBXNativeTarget "Login_Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6D77DE2292CDB5000F038A /* Debug */,
+				ED6D77DF2292CDB5000F038A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
